@@ -1,0 +1,12 @@
+camel:
+  rest:
+    component: servlet
+    binding-mode: json
+    data-format-property[prettyPrint]: true
+    port: ${server.port:8080}
+    host: localhost
+    context-path: /adapter
+    api-context-path: /api-doc
+    api-context-route-id: api-docs-route-id
+    api-property[api.title]: Configuration Handlers
+    api-property[api.version]: 1.0.0-SNAPSHOT

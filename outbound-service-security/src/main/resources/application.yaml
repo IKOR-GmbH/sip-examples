@@ -1,0 +1,27 @@
+camel:
+  rest:
+    component: servlet
+    binding-mode: json
+    data-format-property[prettyPrint]: true
+    context-path: /adapter
+    api-context-path: /api-doc
+    api-context-route-id: api-docs-route-id
+    api-property[api.title]: Outbound Service Security Demo
+    api-property[api.version]: 1.0.0-SNAPSHOT
+
+adapter:
+  keycloak:
+    username: ${KEYCLOAK_USERNAME}
+    client_id: ${KEYCLOAK_CLIENT_ID}
+    password: ${KEYCLOAK_PASSWORD}
+    grant_type: ${KEYCLOAK_GRANT_TYPE}
+    uri: ${KEYCLOAK_ISSUER_URI}
+  external:
+    uri: ${EXTERNAL_URI}
+
+KEYCLOAK_USERNAME:
+KEYCLOAK_CLIENT_ID:
+KEYCLOAK_PASSWORD:
+KEYCLOAK_GRANT_TYPE:
+KEYCLOAK_ISSUER_URI:
+EXTERNAL_URI:

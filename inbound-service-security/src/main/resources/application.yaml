@@ -1,0 +1,19 @@
+camel:
+  rest:
+    component: servlet
+    binding-mode: json
+    data-format-property[prettyPrint]: true
+    context-path: /adapter
+    api-context-path: /api-doc
+    api-context-route-id: api-docs-route-id
+    api-property[api.title]: Inbound Service Security Demo
+    api-property[api.version]: 1.0.0-SNAPSHOT
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${ISSUER_URI}
+
+ISSUER_URI:
