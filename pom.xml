@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>de.ikor.sip.foundation</groupId>
+        <groupId>one.x1f.sip.foundation</groupId>
         <artifactId>sip-starter-parent</artifactId>
-        <version>3.4.0</version>
+        <version>4.0.0</version>
         <relativePath/>
     </parent>
 
-    <groupId>de.ikor.sip</groupId>
+    <groupId>one.x1f.sip</groupId>
     <artifactId>sip-examples</artifactId>
-    <version>3.4.0</version>
+    <version>4.0.0</version>
     <packaging>pom</packaging>
 
     <properties>

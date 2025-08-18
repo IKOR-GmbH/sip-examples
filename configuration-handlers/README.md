@@ -33,7 +33,7 @@ and will take priority over ConnectorLevelErrorHandler.
 Each inbound connector exposes one REST GET endpoint which shows the effects of different handlers.
 
 - `/adapter/success` will not produce an error, but it will invoke InterceptEndpointConfiguration
-- `/adapter/exception/runtime` will produce a UnknownHostException which will be handled by ScenarioLevelErrorHandler
+- `/adapter/exception/scenario` will produce a UnknownHostException which will be handled by ScenarioLevelErrorHandler
 - `/adapter/exception/generic` will produce a IllegalArgumentException which will be handled by ConnectorLevelErrorHandler
 - `/adapter/exception/concrete` will produce a IllegalArgumentException which will be handled inside the connector itself 
 (ConcreteHandlerOutConnector)
